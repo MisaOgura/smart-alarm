@@ -9,8 +9,8 @@ feature 'Home page', js:true do
   context 'When a user visits the home page:' do
     scenario 'user type in the name and the page greets to the user' do
       visit '/'
-      fill_in 'username', with: 'Misa'
-      expect(page).to have_content('Hello, Misa')
+      fill_in 'username', with: 'MISA'
+      expect(page).to have_content('Hello, misa')
     end
   end
 end
