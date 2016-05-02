@@ -14,6 +14,8 @@ gem 'bower-rails'
 
 
 group :development, :test do
+  gem 'jasmine-rails'
+  gem 'jasmine-jquery-rails'
   gem 'byebug'
 end
 
@@ -24,7 +26,6 @@ end
 
 group :test do
   gem 'shoulda'
-  gem 'jasmine-rails'
   gem 'rspec-rails'
   gem 'capybara'
   gem 'rspec-collection_matchers'

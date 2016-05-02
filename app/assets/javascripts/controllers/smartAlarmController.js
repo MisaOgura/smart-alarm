@@ -1,0 +1,2 @@
+smartAlarmApp.controller('japanesifyController', [ function(){
+}]);
