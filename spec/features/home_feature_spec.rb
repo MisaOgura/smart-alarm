@@ -1,16 +1,16 @@
 require 'rails_helper'
 
-feature 'Home page', js:true do
+feature 'Home page' do
   scenario 'has a title' do
-    visit '/'
+    visit root_path
     expect(page).to have_title('Smart Alarm')
   end
 
-  context 'When a user visits the home page:' do
+  context 'When a user visits the home page:', js:true do
     scenario 'user type in the name and the page greets to the user' do
-      visit '/'
+      visit root_path
       fill_in 'username', with: 'MISA'
-      expect(page).to have_content('Hello, misa')
+      expect(page).to have_content('Hello, MISA')
     end
   end
 end
