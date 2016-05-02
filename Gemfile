@@ -24,6 +24,7 @@ end
 
 group :test do
   gem 'shoulda'
+  gem 'jasmine-rails'
   gem 'rspec-rails'
   gem 'capybara'
   gem 'rspec-collection_matchers'
