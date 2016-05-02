@@ -10,6 +10,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'devise'
+gem 'bower-rails'
 
 
 group :development, :test do
@@ -23,6 +24,7 @@ end
 
 group :test do
   gem 'shoulda'
+  gem 'jasmine-rails'
   gem 'rspec-rails'
   gem 'capybara'
   gem 'rspec-collection_matchers'
