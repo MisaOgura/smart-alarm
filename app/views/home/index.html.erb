@@ -1,14 +1,7 @@
-<div class="container-fluid">
-  <div class="panel panel-success">
-    <div class="panel-heading">
-      <h1 class="output" ng-if="name">Hello, {{name}}</h1>
-    </div>
-    <div class="panel-body">
-      <form class="form-inline">
-        <div class="form-group">
-          <input class="form-control" type="text" name="username" placeholder="Enter your name" autofocus ng-model="name">
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
+<section ng-controller="smartAlarmController as controller">
+  <h1 class="output" ng-if="controller.name">Hello, {{controller.name}}</h1>
+  <form class="form">
+    <input class="form-input" type="text" name="name" placeholder="Enter your name" autofocus ng-model="name">
+    <button class="form-button" ng-click="controller.convertToLowerCase(name)">Submit</button>
+  </form>
+</section>
