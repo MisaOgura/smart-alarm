@@ -1,8 +1,9 @@
-smartAlarmApp.controller('japanesifyController', [ function(){
+smartAlarmApp.controller('smartAlarmController', [ function(){
 
   var vm = this;
+  vm.name = "";
 
   vm.convertToLowerCase = function(string) {
-    return string.toLowerCase();
+    vm.name = string.toLowerCase();
   };
 }]);
