@@ -5,7 +5,7 @@ describe ('smartAlarmController', function(){
   var controller;
 
   beforeEach(inject(function($controller){
-    controller = $controller('japanesifyController');
+    controller = $controller('smartAlarmController');
   }));
 
   it('initialises with an empty name', function() {
